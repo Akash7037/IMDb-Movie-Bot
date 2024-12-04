@@ -1,3 +1,6 @@
-build:
-  docker:
-      worker: Dockerfile
+version: '3.9'
+services:
+  my-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
